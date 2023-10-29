@@ -21,18 +21,47 @@ import {
   MDBCarousel
 } from 'mdb-react-ui-kit';
 import Header from './Dashboard/header';
+import {
+	Routes,
+	Route,
+  Navigate,
+  useNavigate,
+  Link,
+  BrowserRouter
+} from "react-router-dom";
+import Hangman from './games/hangman/hangman';
 
  
 function App() {
   const { logout, isAuthenticated } = useAuth0();
+  let path = Route.path;
     return (
         <>
-            <Header/>
-            <Navbar/>
+        <BrowserRouter>
+            
             {/*{images.map(images =>
               <Card imageId={images.itemId}src={images.src} text={images.text}/>)}*/}
-              <Card></Card>
-            {isAuthenticated ? <Profile/> : null}
+              {path = "/hangman" && isAuthenticated ? null : null}
+            {/*isAuthenticated ? <Profile/> : null*/}
+            
+            <Routes>
+              <Route path="/" element={
+                  <>
+                  <Header/>
+                  <Navbar />
+                  {isAuthenticated ? <Profile/> : null}
+                  </>
+              }/>
+            <Route path="/hangman" element={
+            <>
+            <Navbar />
+            <Hangman/>
+            {/*path = "/hangman"*/}
+            </>
+            }/>
+            </Routes>
+            </BrowserRouter>
+
             
         </>
     );

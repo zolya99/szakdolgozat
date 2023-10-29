@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {
-	BrowserRouter as Router,
+	BrowserRouter,
 	Routes,
 	Route,
   Navigate,
@@ -9,8 +9,9 @@ import {
 } from "react-router-dom";
 import LoginButton from "../components/Login/LoginButton";
 import LogoutButton from "../components/Login/LogoutButton";
+import Hangman from "../games/hangman/hangman";
 
-function Navbar() {
+function Navbar(props) {
     return(
         <>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,6 +47,7 @@ function Navbar() {
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="http://localhost:3000">Dashboard</a>
+              
             </li>
           </ul>
           
@@ -53,6 +55,19 @@ function Navbar() {
           <div class="d-flex align-items-center">
           <LoginButton />
             <LogoutButton />
+            
+          </div>
+          
+              <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Games
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <Link to="/hangman" className="dropdown-item">Hangman</Link>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            
             
           </div>
         </div>
