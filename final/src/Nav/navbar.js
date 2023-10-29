@@ -64,7 +64,7 @@ function Navbar(props) {
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <Link to="/hangman" className="dropdown-item">Hangman</Link>
-                <button class="dropdown-item" type="button">Another action</button>
+              <Link to="/memo" className="dropdown-item">Memory Card Game</Link>
                 <button class="dropdown-item" type="button">Something else here</button>
               </div>
             

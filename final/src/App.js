@@ -30,6 +30,7 @@ import {
   BrowserRouter
 } from "react-router-dom";
 import Hangman from './games/hangman/hangman';
+import MemoryCard from './games/memory/memoryCard';
 
  
 function App() {
@@ -56,6 +57,13 @@ function App() {
             <>
             <Navbar />
             <Hangman/>
+            {/*path = "/hangman"*/}
+            </>
+            }/>
+            <Route path="/memo" element={
+            <>
+            <Navbar />
+            <MemoryCard/>
             {/*path = "/hangman"*/}
             </>
             }/>
