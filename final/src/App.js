@@ -30,7 +30,6 @@ import {
   BrowserRouter
 } from "react-router-dom";
 import Hangman from './games/hangman/hangman';
-import MemoryCard from './games/memory/memoryCard';
 
  
 function App() {
