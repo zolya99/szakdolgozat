@@ -30,6 +30,7 @@ import {
   BrowserRouter
 } from "react-router-dom";
 import Hangman from './games/hangman/hangman';
+import MemoryCard from './games/memory/MemoryCard';
 
  
 function App() {
@@ -49,6 +50,7 @@ function App() {
                   <>
                   <Header/>
                   <Navbar />
+                  <Card/>
                   {isAuthenticated ? <Profile/> : null}
                   </>
               }/>

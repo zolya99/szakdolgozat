@@ -1,13 +1,13 @@
-let colors = [ "test",
-"file",
-"think",
-"paper",
-"dog"];
+let colors = [ "blue",
+"red",
+"purple",
+"green",
+"gray"];
 
 
-let animals = ["zsiraf", "segg", "luk"]
+let animals = ["giraffe", "cow", "chicken", "dog", "duck", "mouse", "cat"]
 
-let countries = ["pakistan", "zindabad", "insallah"]
+let countries = ["denmark", "belgium", "germany", "hungary", "spain"]
 
 function randomWord(type=colors){
     switch(type){

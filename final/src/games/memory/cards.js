@@ -1,13 +1,13 @@
 const cardImages = [
-    {"src": "/games/memory/img/Dog.png"},
-    {"src": "/games/memory/img/Cat.png"},
-    {"src": "/games/memory/img/Rabbit.png"},
-    {"src": "/games/memory/img/Wolf.png"},
-    {"src": "/games/memory/img/Fox.png"},
-    {"src": "/games/memory/img/Bird.png"},
-    {"src": "/games/memory/img/Giraffe.png"},
-    {"src": "/games/memory/img/Lion.png"},
-    {"src": "/games/memory/img/Squirrel.png"}
+    {src: require("./img/Bird.png"), width: "100px", height:"100px", matched:false },
+    {src: require("./img/Dog.png"), width: "100px", height:"100px", matched:false},
+    {src: require("./img/Cat.png"), width: "100px", height:"100px", matched:false},
+    {src: require("./img/Squirrel.png"), width: "100px", height:"100px", matched:false},
+    {src: require("./img/Giraffe.png"), width: "100px", height:"100px", matched:false},
+    {src: require("./img/Fox.png"), width: "100px", height:"100px", matched:false},
+    {src: require("./img/Wolf.png"), width: "100px", height:"100px", matched:false},
+    {src: require("./img/Lion.png"), width: "100px", height:"100px", matched:false},
+    {src: require("./img/Rabbit.png"), width: "100px", height:"100px", matched:false}
+    
 ]
-
 export default cardImages;
