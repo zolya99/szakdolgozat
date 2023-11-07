@@ -1,5 +1,5 @@
 import React, {Component, useState} from "react";
-import "E:/repos/szakdolgozat/final/src/css/hangman.css"
+import "./hangman.css"
 import randomWord from "./words";
 
 import img0 from "./img/img0.png";
