@@ -55,6 +55,7 @@ function Navbar(props) {
           <div class="d-flex align-items-center">
           <LoginButton />
             <LogoutButton />
+           
             
           </div>
           
@@ -66,6 +67,9 @@ function Navbar(props) {
               <Link to="/hangman" className="dropdown-item">Hangman</Link>
               <Link to="/memo" className="dropdown-item">Memory Card Game</Link>
                 <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+              <div>
+                <Link to="/profile"><button type="button">Profile</button></Link>
               </div>
             
             

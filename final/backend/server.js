@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
-mongoose.connect('mongodb://127.0.0.1:27017', {
-    dbName: 'users',
+mongoose.connect('mongodb+srv://zolya1999:50Da07bed1@test.rqj6j8u.mongodb.net/?retryWrites=true&w=majority', {
+    dbName: 'test',
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, err => err ? console.log(err) : 
@@ -25,7 +25,7 @@ const UserSchema = new mongoose.Schema({
 });
 
   
-const User = mongoose.model('users', UserSchema);
+const User = mongoose.model('test', UserSchema);
 // For backend and express
 const express = require('express');
 const app = express();
